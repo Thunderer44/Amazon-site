@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24 store</title>
+    <link rel="stylesheet" href="./style/amazon.css">
+    <link rel="stylesheet" href="./test/test.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/js/fontawesome.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                <a href="/"><img src="./images/site logo.jpg" width="125px"></a>  
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="#products">Product</a></li>
+                        <li><a href="#hover">offer</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="signin.php">Account</a></li>
+                    </ul>
+                </nav>
+              <a href="signin.php"><img src="./images/shopping-cart-empty-side-view.png" width="30px" height="30px"></a>  
+                <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+            <div class="loginbox">
+                <img src="./images/blank profile.jpeg" class="avatar">
+                <h1>Login here</h1>
+                <form>
+                    <p>Username</p>
+                    <input type="text" name="" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input type="password" name="" placeholder="Enter Password">
+                    <input type="submit" name="" placeholder="Login">
+                    <a href="#">Lost your password?</a><br>
+                    <a href="#">Don't have an Account?</a>
+                </form>
+            </div>
+    </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download our App for Android and ios mobile phone.</p>
+                            <div class="app-logo">
+                                <img src="./images/App store badge.png">
+                                <img src="./images/app-store google-play Background Removed.png">
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <img src="./images/site logo.jpg">
+                            <p>Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.
+                            </p>
+                        </div>
+                        <div class="footer-col-3" id="about">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Blog post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-4" id="contact">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>YouTube</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <script>
+                var MenuItems = document.getElementById("MenuItems");
+                MenuItems.style.maxHeight = "0px";
+                function menutoggle() {
+                    if (MenuItems.style.maxHeight == "0px") {
+                        MenuItems.style.maxHeight = "200px";
+                    } else {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+        </body>
+        
+        </html>
